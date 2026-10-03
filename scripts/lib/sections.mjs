@@ -291,9 +291,9 @@ export function renderStack() {
   const H = 280;
   // Only technologies from the original profile badges or featured public READMEs.
   const rows = [
-    ["LANGUAGES", C.cyan, ["TypeScript", "JavaScript", "Java"]],
-    ["BACKEND", C.green, ["Node.js", "NestJS", "Express", "NPM"]],
-    ["DATA / QUEUES", C.yellow, ["PostgreSQL", "Redis", "BullMQ", "Kafka"]],
+    ["LANGUAGES", C.cyan, ["Java", "TypeScript", "JavaScript",]],
+    ["BACKEND", C.green, ["Spring boot", "Node.js", "NestJS", "Express", "NPM"]],
+    ["DATA / QUEUES", C.yellow, ["MySQL","PostgreSQL", "Redis", "BullMQ", "Kafka"]],
     ["AI / AUTOMATION", C.magenta, ["Gemini API", "OpenAI API", "GitHub Actions", "SSE"]],
     ["TOOLING", C.cyan, ["TypeORM", "Prisma", "Docker", "Swagger", "Jest", "k6"]],
   ];
