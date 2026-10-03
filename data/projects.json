@@ -1,0 +1,95 @@
+{
+  "_comment": "Curated from public repositories of qormsxo. Descriptions are summaries of each repository README. Do not invent stacks.",
+  "owner": "qormsxo",
+  "projects": [
+    {
+      "repo": "ticket-stream-kafka",
+      "href": "https://github.com/qormsxo/ticket-stream-kafka",
+      "tag": "TRAFFIC",
+      "lines": [
+        "Ticketing backend that absorbs booking spikes",
+        "with Kafka and stops double-selling a seat",
+        "via Redis Redlock + SELECT FOR UPDATE."
+      ],
+      "stack": ["NestJS", "Kafka", "Redis", "PostgreSQL"]
+    },
+    {
+      "repo": "pick-flow",
+      "href": "https://github.com/qormsxo/pick-flow",
+      "tag": "AI x BACKEND",
+      "lines": [
+        "Real-time recommendation API: clicks and likes",
+        "become taste vectors in BullMQ workers.",
+        "A semantic cache skips repeat LLM calls."
+      ],
+      "stack": ["NestJS", "BullMQ", "Redis Stack", "Gemini"]
+    },
+    {
+      "repo": "ai-provider-gateway",
+      "href": "https://github.com/qormsxo/ai-provider-gateway",
+      "tag": "AI x BACKEND",
+      "lines": [
+        "PoC gateway that puts several AI providers",
+        "behind one interface, queues work in BullMQ,",
+        "then masks and formats the result."
+      ],
+      "stack": ["NestJS", "BullMQ", "PostgreSQL", "Swagger"]
+    },
+    {
+      "repo": "feed-briefly",
+      "href": "https://feed-briefly.vercel.app",
+      "tag": "LIVE",
+      "live": true,
+      "lines": [
+        "Daily news digest: collects themed articles,",
+        "summarizes them in 3 lines with Gemini,",
+        "and sends them to KakaoTalk via GitHub Actions."
+      ],
+      "stack": ["NestJS", "PostgreSQL", "Gemini", "Actions"]
+    },
+    {
+      "repo": "workflow-approval-engine",
+      "href": "https://github.com/qormsxo/workflow-approval-engine",
+      "tag": "STATE MACHINE",
+      "lines": [
+        "Approval workflow PoC with role-based transitions",
+        "draft > submitted > in_review > approved/rejected",
+        "and per-state statistics."
+      ],
+      "stack": ["NestJS", "TypeORM", "PostgreSQL", "Redis"]
+    },
+    {
+      "repo": "catch-log-engine",
+      "href": "https://github.com/qormsxo/catch-log-engine",
+      "tag": "PIPELINE",
+      "lines": [
+        "Learning-log pipeline: quiz submits return 202,",
+        "Redis tracks EXP / streak / combo live,",
+        "and a 5-minute cron builds ML-ready features."
+      ],
+      "stack": ["NestJS", "BullMQ", "Redis", "PostgreSQL"]
+    },
+    {
+      "repo": "sound-flow-backend",
+      "href": "https://github.com/qormsxo/sound-flow-backend",
+      "tag": "CACHING",
+      "lines": [
+        "AI BGM search and AI character chat backend.",
+        "Redis look-aside cache, batched play counters,",
+        "and SSE streaming of AI responses."
+      ],
+      "stack": ["NestJS", "Redis", "PostgreSQL", "SSE"]
+    },
+    {
+      "repo": "pod-ai-guard-core",
+      "href": "https://github.com/qormsxo/pod-ai-guard-core",
+      "tag": "GUARDRAIL",
+      "lines": [
+        "Print-on-demand commerce backend with async",
+        "settlement jobs, plus a guardrail layer that",
+        "checks AI / non-developer requests before use."
+      ],
+      "stack": ["NestJS", "Prisma", "PostgreSQL", "Bull"]
+    }
+  ]
+}

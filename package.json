@@ -1,0 +1,16 @@
+{
+  "name": "cyberpunk-profile",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Night City console GitHub profile README generator (contribution city)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fetch": "node scripts/fetch.mjs",
+    "render": "node scripts/render.mjs",
+    "readme": "node scripts/readme.mjs",
+    "build": "node scripts/fetch.mjs && node scripts/render.mjs && node scripts/readme.mjs"
+  }
+}

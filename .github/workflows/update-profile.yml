@@ -1,0 +1,53 @@
+name: Update profile
+
+on:
+  schedule:
+    # 15:17 UTC = 00:17 KST. Off-the-hour minute to avoid the :00 scheduling rush.
+    - cron: "17 15 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "data/projects.json"
+      - ".github/workflows/update-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Secrets are referenced by name only — never written to the repo.
+      #   GITHUB_TOKEN   : provided automatically (public contributions)
+      #   PROFILE_TOKEN  : optional fine-grained PAT to also count private contributions
+      - name: Fetch contribution data
+        run: node scripts/fetch.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Render the console and the contribution city
+        run: node scripts/render.mjs
+
+      - name: Refresh README alt texts
+        run: node scripts/readme.mjs
+
+      - name: Commit only when something changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data assets README.md
+          git diff --cached --quiet || (git commit -m "chore: refresh contribution city" && git push)

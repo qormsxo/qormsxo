@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280" role="img" aria-label="Tech stack: TypeScript, JavaScript, Java, Node.js, NestJS, Express, PostgreSQL, Redis, BullMQ, Kafka, Gemini and OpenAI APIs, GitHub Actions, Docker">
+<title>Tech stack: TypeScript, JavaScript, Java, Node.js, NestJS, Express, PostgreSQL, Redis, BullMQ, Kafka, Gemini and OpenAI APIs, GitHub Actions, Docker</title>
+<defs>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#1a2142" stroke-width="1" opacity=".5"/>
+  </pattern>
+  <pattern id="scan" width="6" height="6" patternUnits="userSpaceOnUse">
+    <rect width="6" height="1" fill="#000" opacity=".12"/>
+  </pattern>
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0a0814"/>
+    <stop offset="1" stop-color="#05040a"/>
+  </linearGradient>
+  <radialGradient id="vignette" cx="50%" cy="45%" r="72%">
+    <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity=".22"/>
+  </radialGradient>
+  <filter id="glow" filterUnits="userSpaceOnUse" x="-60" y="-120" width="1080" height="1600">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowL" filterUnits="userSpaceOnUse" x="-80" y="-140" width="1120" height="1640">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowS" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter><clipPath id="win"><path d="M0 0 V0 H960 V280 V280 H0 Z"/></clipPath></defs>
+<style>
+  text{font-family:'JetBrains Mono','Fira Code',Consolas,'SF Mono','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','NanumGothic','DejaVu Sans Mono','Courier New',monospace;}
+  .blink{animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .pulse{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}</style>
+
+<g clip-path="url(#win)">
+  <rect width="960" height="280" fill="url(#bgGrad)"/>
+<rect width="960" height="280" fill="url(#grid)"/>
+  <g>
+<text x="40" y="40" font-size="12" fill="#8a93b5">05 //</text>
+<text x="86" y="40" font-size="15" font-weight="700" fill="#fcee0a" filter="url(#glowS)">TECH_STACK</text>
+<text x="920" y="40" font-size="11" fill="#8a93b5" text-anchor="end">VERIFIED FROM PUBLIC REPOSITORIES</text>
+<path d="M40 52H920" stroke="#00e8ff" stroke-width="1" opacity=".22"/>
+<path d="M40 52H172" stroke="#fcee0a" stroke-width="2" filter="url(#glowS)"/>
+</g>
+  <text x="40" y="84" font-size="11" fill="#8a93b5">LANGUAGES</text><path d="M40 94H920" stroke="#00e8ff" stroke-opacity=".08"/><g><rect x="200" y="68" width="98" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="249" y="84.55" font-size="13" fill="#00e8ff" text-anchor="middle">TypeScript</text></g><g><rect x="308" y="68" width="98" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="357" y="84.55" font-size="13" fill="#00e8ff" text-anchor="middle">JavaScript</text></g><g><rect x="416" y="68" width="51" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="441.5" y="84.55" font-size="13" fill="#00e8ff" text-anchor="middle">Java</text></g><text x="40" y="122" font-size="11" fill="#8a93b5">BACKEND</text><path d="M40 132H920" stroke="#00e8ff" stroke-opacity=".08"/><g><rect x="200" y="106" width="75" height="24" rx="2" fill="#3dff9a" fill-opacity=".08" stroke="#3dff9a" stroke-opacity=".55"/><text x="237.5" y="122.55" font-size="13" fill="#3dff9a" text-anchor="middle">Node.js</text></g><g><rect x="285" y="106" width="67" height="24" rx="2" fill="#3dff9a" fill-opacity=".08" stroke="#3dff9a" stroke-opacity=".55"/><text x="318.5" y="122.55" font-size="13" fill="#3dff9a" text-anchor="middle">NestJS</text></g><g><rect x="362" y="106" width="75" height="24" rx="2" fill="#3dff9a" fill-opacity=".08" stroke="#3dff9a" stroke-opacity=".55"/><text x="399.5" y="122.55" font-size="13" fill="#3dff9a" text-anchor="middle">Express</text></g><g><rect x="447" y="106" width="43" height="24" rx="2" fill="#3dff9a" fill-opacity=".08" stroke="#3dff9a" stroke-opacity=".55"/><text x="468.5" y="122.55" font-size="13" fill="#3dff9a" text-anchor="middle">NPM</text></g><text x="40" y="160" font-size="11" fill="#8a93b5">DATA / QUEUES</text><path d="M40 170H920" stroke="#00e8ff" stroke-opacity=".08"/><g><rect x="200" y="144" width="98" height="24" rx="2" fill="#fcee0a" fill-opacity=".08" stroke="#fcee0a" stroke-opacity=".55"/><text x="249" y="160.55" font-size="13" fill="#fcee0a" text-anchor="middle">PostgreSQL</text></g><g><rect x="308" y="144" width="59" height="24" rx="2" fill="#fcee0a" fill-opacity=".08" stroke="#fcee0a" stroke-opacity=".55"/><text x="337.5" y="160.55" font-size="13" fill="#fcee0a" text-anchor="middle">Redis</text></g><g><rect x="377" y="144" width="67" height="24" rx="2" fill="#fcee0a" fill-opacity=".08" stroke="#fcee0a" stroke-opacity=".55"/><text x="410.5" y="160.55" font-size="13" fill="#fcee0a" text-anchor="middle">BullMQ</text></g><g><rect x="454" y="144" width="59" height="24" rx="2" fill="#fcee0a" fill-opacity=".08" stroke="#fcee0a" stroke-opacity=".55"/><text x="483.5" y="160.55" font-size="13" fill="#fcee0a" text-anchor="middle">Kafka</text></g><text x="40" y="198" font-size="11" fill="#8a93b5">AI / AUTOMATION</text><path d="M40 208H920" stroke="#00e8ff" stroke-opacity=".08"/><g><rect x="200" y="182" width="98" height="24" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="249" y="198.55" font-size="13" fill="#ff2d95" text-anchor="middle">Gemini API</text></g><g><rect x="308" y="182" width="98" height="24" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="357" y="198.55" font-size="13" fill="#ff2d95" text-anchor="middle">OpenAI API</text></g><g><rect x="416" y="182" width="129" height="24" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="480.5" y="198.55" font-size="13" fill="#ff2d95" text-anchor="middle">GitHub Actions</text></g><g><rect x="555" y="182" width="43" height="24" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="576.5" y="198.55" font-size="13" fill="#ff2d95" text-anchor="middle">SSE</text></g><text x="40" y="236" font-size="11" fill="#8a93b5">TOOLING</text><path d="M40 246H920" stroke="#00e8ff" stroke-opacity=".08"/><g><rect x="200" y="220" width="75" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="237.5" y="236.55" font-size="13" fill="#00e8ff" text-anchor="middle">TypeORM</text></g><g><rect x="285" y="220" width="67" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="318.5" y="236.55" font-size="13" fill="#00e8ff" text-anchor="middle">Prisma</text></g><g><rect x="362" y="220" width="67" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="395.5" y="236.55" font-size="13" fill="#00e8ff" text-anchor="middle">Docker</text></g><g><rect x="439" y="220" width="75" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="476.5" y="236.55" font-size="13" fill="#00e8ff" text-anchor="middle">Swagger</text></g><g><rect x="524" y="220" width="51" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="549.5" y="236.55" font-size="13" fill="#00e8ff" text-anchor="middle">Jest</text></g><g><rect x="585" y="220" width="36" height="24" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="603" y="236.55" font-size="13" fill="#00e8ff" text-anchor="middle">k6</text></g>
+  <text x="40" y="266" font-size="11" fill="#3d4666">// listed: original README badges + what the featured projects actually use.</text>
+  <rect width="960" height="280" fill="url(#scan)" pointer-events="none"/>
+<rect width="960" height="280" fill="url(#vignette)" pointer-events="none"/>
+</g>
+<g fill="none">
+<path d="M7 -40V320M953 -40V320" stroke="#00e8ff" stroke-width="1" opacity=".16"/>
+<path d="M1 20h10M959 20h-10M1 60h10M959 60h-10M1 100h10M959 100h-10M1 140h10M959 140h-10M1 180h10M959 180h-10M1 220h10M959 220h-10M1 260h10M959 260h-10" stroke="#fcee0a" stroke-width="1" opacity=".35"/>
+<path d="M1 -40V320M959 -40V320" stroke="#00e8ff" stroke-width="2" filter="url(#glow)"/>
+</g>
+</svg>
