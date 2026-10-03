@@ -40,7 +40,7 @@
   <g>
 <text x="40" y="40" font-size="12" fill="#8a93b5">06 //</text>
 <text x="86" y="40" font-size="15" font-weight="700" fill="#fcee0a" filter="url(#glowS)">AUTO_UPDATE</text>
-<text x="920" y="40" font-size="11" fill="#8a93b5" text-anchor="end">LAST SYNC 2026-10-03  //  SOURCE HTML</text>
+<text x="920" y="40" font-size="11" fill="#8a93b5" text-anchor="end">LAST SYNC 2026-10-03  //  SOURCE GRAPHQL</text>
 <path d="M40 52H920" stroke="#00e8ff" stroke-width="1" opacity=".22"/>
 <path d="M40 52H172" stroke="#fcee0a" stroke-width="2" filter="url(#glowS)"/>
 </g>
