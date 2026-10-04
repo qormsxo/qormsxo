@@ -38,7 +38,7 @@
   <rect width="960" height="80" fill="url(#bgGrad)"/>
 <rect width="960" height="80" fill="url(#grid)"/>
   <polygon points="240,14 706,14 720,28 720,66 254,66 240,52" fill="#fcee0a" fill-opacity=".06" stroke="#fcee0a" stroke-opacity=".7"/>
-  <text x="480" y="46" font-size="14" fill="#fcee0a" text-anchor="middle" filter="url(#glowS)">&gt;&gt; BROWSE ALL 34 REPOSITORIES &lt;&lt;</text>
+  <text x="480" y="46" font-size="14" fill="#fcee0a" text-anchor="middle" filter="url(#glowS)">&gt;&gt; BROWSE ALL 36 REPOSITORIES &lt;&lt;</text>
   <text x="480" y="62" font-size="10" fill="#8a93b5" text-anchor="middle">github.com/qormsxo</text>
   <rect width="960" height="80" fill="url(#scan)" pointer-events="none"/>
 <rect width="960" height="80" fill="url(#vignette)" pointer-events="none"/>
