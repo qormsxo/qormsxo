@@ -40,7 +40,7 @@
   <g>
 <text x="40" y="40" font-size="12" fill="#8a93b5">03 //</text>
 <text x="86" y="40" font-size="15" font-weight="700" fill="#fcee0a" filter="url(#glowS)">SYSTEM_STATUS</text>
-<text x="920" y="40" font-size="11" fill="#8a93b5" text-anchor="end">SYNC 2026-10-05</text>
+<text x="920" y="40" font-size="11" fill="#8a93b5" text-anchor="end">SYNC 2026-10-06</text>
 <path d="M40 52H920" stroke="#00e8ff" stroke-width="1" opacity=".22"/>
 <path d="M40 52H172" stroke="#fcee0a" stroke-width="2" filter="url(#glowS)"/>
 </g>
@@ -53,7 +53,7 @@
 <polygon points="218,72 374,72 386,84 386,176 230,176 218,164" fill="#0c0e1a" fill-opacity=".9" stroke="#ff2d95" stroke-opacity=".5"/>
 <path d="M230 176H356" stroke="#ff2d95" stroke-width="2" opacity=".9" filter="url(#glowS)"/>
 <text x="232" y="96" font-size="10" fill="#8a93b5">ALL-TIME</text>
-<text x="232" y="136" font-size="36" font-weight="800" fill="#ff2d95" filter="url(#glowS)">2,824</text>
+<text x="232" y="136" font-size="36" font-weight="800" fill="#ff2d95" filter="url(#glowS)">2,825</text>
 <text x="232" y="158" font-size="11" fill="#8a93b5">since 2018</text></g><g>
 <polygon points="396,72 552,72 564,84 564,176 408,176 396,164" fill="#0c0e1a" fill-opacity=".9" stroke="#3dff9a" stroke-opacity=".5"/>
 <path d="M408 176H534" stroke="#3dff9a" stroke-width="2" opacity=".9" filter="url(#glowS)"/>
