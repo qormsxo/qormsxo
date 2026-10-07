@@ -44,7 +44,7 @@
 <path d="M40 56H920" stroke="#00e8ff" stroke-width="1" opacity=".22"/>
 <path d="M40 56H172" stroke="#fcee0a" stroke-width="2" filter="url(#glowS)"/>
 </g>
-  <text x="40" y="74" font-size="11" fill="#3d4666">8 FEATURED REPOSITORIES  //  BACKEND SYSTEMS, QUEUES, CACHES AND AI INTEGRATIONS</text>
+  <text x="40" y="74" font-size="11" fill="#3d4666">6 FEATURED REPOSITORIES  //  BACKEND SYSTEMS, QUEUES, CACHES AND AI INTEGRATIONS</text>
   <rect width="960" height="80" fill="url(#scan)" pointer-events="none"/>
 <rect width="960" height="80" fill="url(#vignette)" pointer-events="none"/>
 </g>

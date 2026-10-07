@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="ticket-stream-kafka: Ticketing backend that absorbs booking spikes with Kafka and stops double-selling a seat via Redis Redlock + SELECT FOR UPDATE.">
-<title>ticket-stream-kafka: Ticketing backend that absorbs booking spikes with Kafka and stops double-selling a seat via Redis Redlock + SELECT FOR UPDATE.</title><desc>Stack: NestJS, Kafka, Redis, PostgreSQL</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200" role="img" aria-label="traffic-jam-simulator: West-to-east traffic jam sim: cars keep distance, hard-brake and cut-in ripple down the lane. Engine is separate from the 3D React renderer.">
+<title>traffic-jam-simulator: West-to-east traffic jam sim: cars keep distance, hard-brake and cut-in ripple down the lane. Engine is separate from the 3D React renderer.</title><desc>Stack: TypeScript, React, Three.js, Vite</desc>
 <defs>
   <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
     <path d="M40 0H0V40" fill="none" stroke="#1a2142" stroke-width="1" opacity=".5"/>
@@ -42,14 +42,14 @@
 <rect width="480" height="200" fill="url(#grid)"/>
   <polygon points="40,8 456,8 470,22 470,192 54,192 40,178" fill="#0c0e1a" fill-opacity=".92" stroke="#00e8ff" stroke-opacity=".55"/>
   <g clip-path="url(#pc)"><rect x="40" y="-32" width="430" height="40" fill="url(#cs)">
-    <animate attributeName="y" values="-32;192" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="-32;192" dur="5.5s" begin="3.6s" repeatCount="indefinite"/>
   </rect></g>
   <rect x="40" y="22" width="3" height="156" fill="#00e8ff" filter="url(#glowS)"/>
-  <text x="60" y="41" font-size="11" fill="#8a93b5">PRJ-01 <tspan fill="#00e8ff">[TRAFFIC]</tspan></text>
+  <text x="60" y="41" font-size="11" fill="#8a93b5">PRJ-05 <tspan fill="#00e8ff">[SIMULATION]</tspan></text>
   <text x="452" y="41" font-size="11" fill="#00e8ff" text-anchor="end">OPEN &gt;</text>
-  <text x="60" y="76" font-size="21" font-weight="700" fill="#f2fdff" filter="url(#glowS)">ticket-stream-kafka</text>
-  <text x="60" y="106" font-size="12.5" fill="#b7c9e8">Ticketing backend that absorbs booking spikes</text><text x="60" y="124" font-size="12.5" fill="#b7c9e8">with Kafka and stops double-selling a seat</text><text x="60" y="142" font-size="12.5" fill="#b7c9e8">via Redis Redlock + SELECT FOR UPDATE.</text>
-  <g><rect x="60" y="150" width="60" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="90" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">NestJS</text></g><g><rect x="128" y="150" width="53" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="154.5" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">Kafka</text></g><g><rect x="189" y="150" width="53" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="215.5" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">Redis</text></g><g><rect x="250" y="150" width="86" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="293" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">PostgreSQL</text></g>
+  <text x="60" y="76" font-size="21" font-weight="700" fill="#f2fdff" filter="url(#glowS)">traffic-jam-simulator</text>
+  <text x="60" y="106" font-size="12.5" fill="#b7c9e8">West-to-east traffic jam sim: cars keep distance,</text><text x="60" y="124" font-size="12.5" fill="#b7c9e8">hard-brake and cut-in ripple down the lane.</text><text x="60" y="142" font-size="12.5" fill="#b7c9e8">Engine is separate from the 3D React renderer.</text>
+  <g><rect x="60" y="150" width="86" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="103" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">TypeScript</text></g><g><rect x="154" y="150" width="53" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="180.5" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">React</text></g><g><rect x="215" y="150" width="73" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="251.5" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">Three.js</text></g><g><rect x="296" y="150" width="46" height="22" rx="2" fill="#00e8ff" fill-opacity=".08" stroke="#00e8ff" stroke-opacity=".55"/><text x="319" y="164.85" font-size="11" fill="#00e8ff" text-anchor="middle">Vite</text></g>
   <rect width="480" height="200" fill="url(#scan)" pointer-events="none"/>
 <rect width="480" height="200" fill="url(#vignette)" pointer-events="none"/>
 </g>

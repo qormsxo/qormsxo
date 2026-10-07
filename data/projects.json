@@ -3,17 +3,6 @@
   "owner": "qormsxo",
   "projects": [
     {
-      "repo": "ticket-stream-kafka",
-      "href": "https://github.com/qormsxo/ticket-stream-kafka",
-      "tag": "TRAFFIC",
-      "lines": [
-        "Ticketing backend that absorbs booking spikes",
-        "with Kafka and stops double-selling a seat",
-        "via Redis Redlock + SELECT FOR UPDATE."
-      ],
-      "stack": ["NestJS", "Kafka", "Redis", "PostgreSQL"]
-    },
-    {
       "repo": "pick-flow",
       "href": "https://github.com/qormsxo/pick-flow",
       "tag": "AI x BACKEND",
@@ -59,37 +48,26 @@
       "stack": ["NestJS", "TypeORM", "PostgreSQL", "Redis"]
     },
     {
-      "repo": "catch-log-engine",
-      "href": "https://github.com/qormsxo/catch-log-engine",
-      "tag": "PIPELINE",
+      "repo": "traffic-jam-simulator",
+      "href": "https://github.com/qormsxo/traffic-jam-simulator",
+      "tag": "SIMULATION",
       "lines": [
-        "Learning-log pipeline: quiz submits return 202,",
-        "Redis tracks EXP / streak / combo live,",
-        "and a 5-minute cron builds ML-ready features."
+        "West-to-east traffic jam sim: cars keep distance,",
+        "hard-brake and cut-in ripple down the lane.",
+        "Engine is separate from the 3D React renderer."
       ],
-      "stack": ["NestJS", "BullMQ", "Redis", "PostgreSQL"]
+      "stack": ["TypeScript", "React", "Three.js", "Vite"]
     },
     {
-      "repo": "sound-flow-backend",
-      "href": "https://github.com/qormsxo/sound-flow-backend",
-      "tag": "CACHING",
+      "repo": "kiosk-simulation",
+      "href": "https://github.com/qormsxo/kiosk-simulation",
+      "tag": "SIMULATION",
       "lines": [
-        "AI BGM search and AI character chat backend.",
-        "Redis look-aside cache, batched play counters,",
-        "and SSE streaming of AI responses."
+        "Cafe kiosk sim: guests queue, order, wait, leave.",
+        "Kiosk count, crowd mix and time of day change",
+        "how the line grows. Same seed, same result."
       ],
-      "stack": ["NestJS", "Redis", "PostgreSQL", "SSE"]
-    },
-    {
-      "repo": "pod-ai-guard-core",
-      "href": "https://github.com/qormsxo/pod-ai-guard-core",
-      "tag": "GUARDRAIL",
-      "lines": [
-        "Print-on-demand commerce backend with async",
-        "settlement jobs, plus a guardrail layer that",
-        "checks AI / non-developer requests before use."
-      ],
-      "stack": ["NestJS", "Prisma", "PostgreSQL", "Bull"]
+      "stack": ["TypeScript", "React", "Three.js", "Vite"]
     }
   ]
 }

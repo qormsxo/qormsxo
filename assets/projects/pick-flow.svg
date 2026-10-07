@@ -28,7 +28,7 @@
     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <clipPath id="win"><path d="M0 0 V0 H480 V200 V200 H0 Z"/></clipPath>
-  <clipPath id="pc"><polygon points="10,8 426,8 440,22 440,192 24,192 10,178"/></clipPath>
+  <clipPath id="pc"><polygon points="40,8 456,8 470,22 470,192 54,192 40,178"/></clipPath>
   <linearGradient id="cs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff2d95" stop-opacity="0"/><stop offset=".5" stop-color="#ff2d95" stop-opacity=".16"/><stop offset="1" stop-color="#ff2d95" stop-opacity="0"/></linearGradient></defs>
 <style>
   text{font-family:'JetBrains Mono','Fira Code',Consolas,'SF Mono','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','NanumGothic','DejaVu Sans Mono','Courier New',monospace;}
@@ -40,22 +40,22 @@
 <g clip-path="url(#win)">
   <rect width="480" height="200" fill="url(#bgGrad)"/>
 <rect width="480" height="200" fill="url(#grid)"/>
-  <polygon points="10,8 426,8 440,22 440,192 24,192 10,178" fill="#0c0e1a" fill-opacity=".92" stroke="#ff2d95" stroke-opacity=".55"/>
-  <g clip-path="url(#pc)"><rect x="10" y="-32" width="430" height="40" fill="url(#cs)">
-    <animate attributeName="y" values="-32;192" dur="5.5s" begin="0.9s" repeatCount="indefinite"/>
+  <polygon points="40,8 456,8 470,22 470,192 54,192 40,178" fill="#0c0e1a" fill-opacity=".92" stroke="#ff2d95" stroke-opacity=".55"/>
+  <g clip-path="url(#pc)"><rect x="40" y="-32" width="430" height="40" fill="url(#cs)">
+    <animate attributeName="y" values="-32;192" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
   </rect></g>
-  <rect x="10" y="22" width="3" height="156" fill="#ff2d95" filter="url(#glowS)"/>
-  <text x="30" y="41" font-size="11" fill="#8a93b5">PRJ-02 <tspan fill="#ff2d95">[AI x BACKEND]</tspan></text>
-  <text x="422" y="41" font-size="11" fill="#ff2d95" text-anchor="end">OPEN &gt;</text>
-  <text x="30" y="76" font-size="21" font-weight="700" fill="#f2fdff" filter="url(#glowS)">pick-flow</text>
-  <text x="30" y="106" font-size="12.5" fill="#b7c9e8">Real-time recommendation API: clicks and likes</text><text x="30" y="124" font-size="12.5" fill="#b7c9e8">become taste vectors in BullMQ workers.</text><text x="30" y="142" font-size="12.5" fill="#b7c9e8">A semantic cache skips repeat LLM calls.</text>
-  <g><rect x="30" y="150" width="60" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="60" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">NestJS</text></g><g><rect x="98" y="150" width="60" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="128" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">BullMQ</text></g><g><rect x="166" y="150" width="93" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="212.5" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">Redis Stack</text></g><g><rect x="267" y="150" width="60" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="297" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">Gemini</text></g>
+  <rect x="40" y="22" width="3" height="156" fill="#ff2d95" filter="url(#glowS)"/>
+  <text x="60" y="41" font-size="11" fill="#8a93b5">PRJ-01 <tspan fill="#ff2d95">[AI x BACKEND]</tspan></text>
+  <text x="452" y="41" font-size="11" fill="#ff2d95" text-anchor="end">OPEN &gt;</text>
+  <text x="60" y="76" font-size="21" font-weight="700" fill="#f2fdff" filter="url(#glowS)">pick-flow</text>
+  <text x="60" y="106" font-size="12.5" fill="#b7c9e8">Real-time recommendation API: clicks and likes</text><text x="60" y="124" font-size="12.5" fill="#b7c9e8">become taste vectors in BullMQ workers.</text><text x="60" y="142" font-size="12.5" fill="#b7c9e8">A semantic cache skips repeat LLM calls.</text>
+  <g><rect x="60" y="150" width="60" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="90" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">NestJS</text></g><g><rect x="128" y="150" width="60" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="158" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">BullMQ</text></g><g><rect x="196" y="150" width="93" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="242.5" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">Redis Stack</text></g><g><rect x="297" y="150" width="60" height="22" rx="2" fill="#ff2d95" fill-opacity=".08" stroke="#ff2d95" stroke-opacity=".55"/><text x="327" y="164.85" font-size="11" fill="#ff2d95" text-anchor="middle">Gemini</text></g>
   <rect width="480" height="200" fill="url(#scan)" pointer-events="none"/>
 <rect width="480" height="200" fill="url(#vignette)" pointer-events="none"/>
 </g>
 <g fill="none">
-<path d="M473 -40V240" stroke="#00e8ff" stroke-width="1" opacity=".16"/>
-<path d="M479 20h-10M479 60h-10M479 100h-10M479 140h-10M479 180h-10" stroke="#fcee0a" stroke-width="1" opacity=".35"/>
-<path d="M479 -40V240" stroke="#00e8ff" stroke-width="2" filter="url(#glow)"/>
+<path d="M7 -40V240" stroke="#00e8ff" stroke-width="1" opacity=".16"/>
+<path d="M1 20h10M1 60h10M1 100h10M1 140h10M1 180h10" stroke="#fcee0a" stroke-width="1" opacity=".35"/>
+<path d="M1 -40V240" stroke="#00e8ff" stroke-width="2" filter="url(#glow)"/>
 </g>
 </svg>
