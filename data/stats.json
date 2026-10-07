@@ -1,16 +1,16 @@
 {
   "user": "qormsxo",
-  "source": "html",
-  "lastDataDate": "2026-10-03",
-  "lastYear": 135,
-  "allTime": null,
-  "currentStreak": 4,
-  "longestStreak": 6,
+  "source": "graphql",
+  "lastDataDate": "2026-10-06",
+  "lastYear": 169,
+  "allTime": 2825,
+  "currentStreak": 6,
+  "longestStreak": 27,
   "busiest": {
-    "date": "2026-09-20",
-    "count": 42
+    "date": "2024-05-30",
+    "count": 200
   },
-  "repos": 34,
+  "repos": 37,
   "followers": 3,
   "since": "2018-12-07"
 }
