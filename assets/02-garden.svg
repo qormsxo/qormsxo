@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280" role="img" aria-label="지난 1년의 기여를 밤하늘 아래 실루엣으로 그린 그림">
+<title>지난 1년의 기여를 밤하늘 아래 실루엣으로 그린 그림</title><desc>가장 바빴던 날 2024-05-30, 200회.</desc>
+<defs>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#e4dccf" stroke-width="1"/>
+  </pattern>
+  <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+    <rect width="1" height="1" fill="#fff" opacity=".07"/>
+  </pattern>
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2c2536"/>
+    <stop offset="1" stop-color="#241e2e"/>
+  </linearGradient>
+  <radialGradient id="vignette" cx="50%" cy="45%" r="72%">
+    <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity=".22"/>
+  </radialGradient>
+  <filter id="glow" filterUnits="userSpaceOnUse" x="-60" y="-120" width="1080" height="1600">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowL" filterUnits="userSpaceOnUse" x="-80" y="-140" width="1120" height="1640">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowS" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g"><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="14"/>
+  </filter>
+  <clipPath id="win"><path d="M0 0 V0 H960 V268 Q960 280 948 280 H12 Q0 280 0 268 Z"/></clipPath>
+  <linearGradient id="sky" gradientUnits="userSpaceOnUse" x1="0" y1="-360" x2="0" y2="280"><stop offset="0" stop-color="#121c40"/><stop offset="0.2" stop-color="#182448"/><stop offset="0.38" stop-color="#221c44"/><stop offset="0.52" stop-color="#302440"/><stop offset="0.68" stop-color="#3a283c"/><stop offset="0.84" stop-color="#221830"/><stop offset="1" stop-color="#0c0a14"/></linearGradient></defs>
+<style>
+  text{font-family:'Segoe UI','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;}
+  .blink{animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .pulse{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}</style>
+
+<g clip-path="url(#win)">
+  <rect width="960" height="280" fill="url(#sky)"/>
+  <ellipse cx="160" cy="48" rx="200" ry="26" fill="#e7a8bc" opacity=".08" filter="url(#soft)"/>
+  <path d="M0 280 L0 204 L9.1 198 Q9.1 198 18.1 198.0 Q27.2 198 36.2 198.0 Q45.3 198 54.3 198.0 Q63.4 198 72.5 198.0 Q81.5 198 90.6 198.0 Q99.6 198 108.7 198.0 Q117.7 198 126.8 198.0 Q135.8 198 144.9 189.0 Q154.0 180 163.0 189.0 Q172.1 198 181.1 198.0 Q190.2 198 199.2 198.0 Q208.3 198 217.4 198.0 Q226.4 198 235.5 198.0 Q244.5 198 253.6 198.0 Q262.6 198 271.7 198.0 Q280.8 198 289.8 198.0 Q298.9 198 307.9 198.0 Q317.0 198 326.0 198.0 Q335.1 198 344.2 198.0 Q353.2 198 362.3 185.5 Q371.3 173 380.4 173.0 Q389.4 173 398.5 185.5 Q407.5 198 416.6 189.0 Q425.7 180 434.7 189.0 Q443.8 198 452.8 198.0 Q461.9 198 470.9 198.0 Q480.0 198 489.1 198.0 Q498.1 198 507.2 198.0 Q516.2 198 525.3 198.0 Q534.3 198 543.4 198.0 Q552.5 198 561.5 198.0 Q570.6 198 579.6 198.0 Q588.7 198 597.7 198.0 Q606.8 198 615.8 198.0 Q624.9 198 634.0 198.0 Q643.0 198 652.1 198.0 Q661.1 198 670.2 198.0 Q679.2 198 688.3 198.0 Q697.4 198 706.4 198.0 Q715.5 198 724.5 198.0 Q733.6 198 742.6 198.0 Q751.7 198 760.8 198.0 Q769.8 198 778.9 198.0 Q787.9 198 797.0 198.0 Q806.0 198 815.1 198.0 Q824.2 198 833.2 198.0 Q842.3 198 851.3 172.0 Q860.4 146 869.4 146.0 Q878.5 146 887.5 148.5 Q896.6 151 905.7 134.5 Q914.7 118 923.8 128.0 Q932.8 138 941.9 136.5 Q950.9 135 960 202 L960 280 Z" fill="#100e18"/>
+  <rect width="960" height="280" filter="url(#grain)" opacity=".4"/>
+  <text x="64" y="40" font-size="14" fill="#f3eee6">지난 1년</text>
+</g>
+</svg>

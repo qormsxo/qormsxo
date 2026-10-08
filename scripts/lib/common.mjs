@@ -1,22 +1,50 @@
-// Shared primitives for the Night City console.
+// Shared primitives for the profile SVGs.
 // GitHub README SVGs are loaded as <img>, so no JS, no external fonts, no hover.
 
 export const W = 960;
 
 export const C = {
-  bg: "#07060c",
-  panel: "#0c0e1a",
-  cyan: "#00e8ff",
-  magenta: "#ff2d95",
-  yellow: "#fcee0a",
-  green: "#3dff9a",
-  red: "#ff003c",
-  text: "#eaf4ff",
-  dim: "#8a93b5",
-  faint: "#3d4666",
+  bg: "#2a3f78",
+  panel: "#3a4c86",
+  wood: "#6b5344",
+  woodLite: "#c4a07a",
+  cyan: "#d7e4f2",
+  magenta: "#e7b0c4",
+  yellow: "#f3eee6",
+  green: "#2d5a34",
+  red: "#e7b0c4",
+  text: "#f3eee6",
+  dim: "#ddd0dc",
+  faint: "#6a5878",
+  ink: "#f3eee6",
 };
 
-export const FONT = "'JetBrains Mono','Fira Code',Consolas,'SF Mono','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','NanumGothic','DejaVu Sans Mono','Courier New',monospace";
+/** One night sky across the three stacked sheets. offsetY is this sheet's top. */
+const SKY_H = 640;
+const SKY_STOPS = [
+  [0, "#121c40"],
+  [0.2, "#182448"],
+  [0.38, "#221c44"],
+  [0.52, "#302440"],
+  [0.68, "#3a283c"],
+  [0.84, "#221830"],
+  [1, "#0c0a14"],
+];
+
+export function skyDefs(id, offsetY) {
+  const stops = SKY_STOPS.map(([o, c]) => `<stop offset="${o}" stop-color="${c}"/>`).join("");
+  return `<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="${-offsetY}" x2="0" y2="${SKY_H - offsetY}">${stops}</linearGradient>`;
+}
+
+export function skyFill(id, h, w = W) {
+  return `<rect width="${w}" height="${h}" fill="url(#${id})"/>`;
+}
+
+export function grain(h, w = W) {
+  return `<rect width="${w}" height="${h}" filter="url(#grain)" opacity=".4"/>`;
+}
+
+export const FONT = "'Segoe UI','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif";
 
 export const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -49,14 +77,14 @@ export function hashString(s) {
 
 const COMMON_DEFS = `
   <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M40 0H0V40" fill="none" stroke="#1a2142" stroke-width="1" opacity=".5"/>
+    <path d="M40 0H0V40" fill="none" stroke="#e4dccf" stroke-width="1"/>
   </pattern>
-  <pattern id="scan" width="6" height="6" patternUnits="userSpaceOnUse">
-    <rect width="6" height="1" fill="#000" opacity=".12"/>
+  <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+    <rect width="1" height="1" fill="#fff" opacity=".07"/>
   </pattern>
   <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#0a0814"/>
-    <stop offset="1" stop-color="#05040a"/>
+    <stop offset="0" stop-color="#2c2536"/>
+    <stop offset="1" stop-color="#241e2e"/>
   </linearGradient>
   <radialGradient id="vignette" cx="50%" cy="45%" r="72%">
     <stop offset="70%" stop-color="#000" stop-opacity="0"/>
@@ -73,6 +101,14 @@ const COMMON_DEFS = `
   <filter id="glowS" x="-60%" y="-60%" width="220%" height="220%">
     <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="b"/>
     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g"><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="14"/>
   </filter>`;
 
 const COMMON_STYLE = `
@@ -106,41 +142,30 @@ export function clipPath(id, { w = W, h, top = false, bottom = false }) {
 }
 
 export function background({ w = W, h }) {
-  return `<rect width="${w}" height="${h}" fill="url(#bgGrad)"/>
-<rect width="${w}" height="${h}" fill="url(#grid)"/>`;
+  return `<rect width="${w}" height="${h}" fill="${C.bg}"/>`;
 }
 
 export function scanOverlay({ w = W, h }) {
-  return `<rect width="${w}" height="${h}" fill="url(#scan)" pointer-events="none"/>
-<rect width="${w}" height="${h}" fill="url(#vignette)" pointer-events="none"/>`;
+  return `<rect width="${w}" height="${h}" fill="url(#scan)" pointer-events="none"/>`;
 }
 
-export function frame({ w = W, h, top = false, bottom = false, left = true, right = true }) {
-  const r = 12;
-  const x0 = 1;
-  const x1 = w - 1;
-  const yTop = top ? r : -40;
-  const yBot = bottom ? h - r : h + 40;
-  const main = [];
-  if (left) main.push(`M${x0} ${yTop}V${yBot}`);
-  if (right) main.push(`M${x1} ${yTop}V${yBot}`);
-  if (top) main.push(`M${x0} ${r}Q${x0} 1 ${x0 + r} 1H${x1 - r}Q${x1} 1 ${x1} ${r}`);
-  if (bottom) main.push(`M${x0} ${h - r}Q${x0} ${h - 1} ${x0 + r} ${h - 1}H${x1 - r}Q${x1} ${h - 1} ${x1} ${h - r}`);
-
-  const inner = [];
-  if (left) inner.push(`M7 -40V${h + 40}`);
-  if (right) inner.push(`M${w - 7} -40V${h + 40}`);
-
-  const ticks = [];
-  for (let y = 20; y < h; y += 40) {
-    if (left) ticks.push(`M1 ${y}h10`);
-    if (right) ticks.push(`M${w - 1} ${y}h-10`);
-  }
-
-  return `<g fill="none">
-<path d="${inner.join("")}" stroke="${C.cyan}" stroke-width="1" opacity=".16"/>
-<path d="${ticks.join("")}" stroke="${C.yellow}" stroke-width="1" opacity=".35"/>
-<path d="${main.join("")}" stroke="${C.cyan}" stroke-width="2" filter="url(#glow)"/>
+/** Wood window rails. Side rails run past the slice so the three sheets meet as one frame. */
+export function frame({ w = W, h, top = false, bottom = false }) {
+  const rail = 22;
+  const y0 = -48;
+  const y1 = h + 48;
+  const cap = top
+    ? `<rect x="0" y="0" width="${w}" height="${rail}" fill="${C.wood}"/><rect x="0" y="${rail - 3}" width="${w}" height="3" fill="${C.woodLite}" opacity=".45"/>`
+    : "";
+  const sill = bottom
+    ? `<rect x="0" y="${h - rail}" width="${w}" height="${rail}" fill="${C.wood}"/><rect x="0" y="${h - rail}" width="${w}" height="3" fill="${C.woodLite}" opacity=".45"/>`
+    : "";
+  return `<g>
+<rect x="0" y="${y0}" width="${rail}" height="${y1 - y0}" fill="${C.wood}"/>
+<rect x="${w - rail}" y="${y0}" width="${rail}" height="${y1 - y0}" fill="${C.wood}"/>
+<rect x="${rail - 3}" y="${y0}" width="3" height="${y1 - y0}" fill="${C.woodLite}" opacity=".4"/>
+<rect x="${w - rail}" y="${y0}" width="3" height="${y1 - y0}" fill="#3d2e24" opacity=".35"/>
+${cap}${sill}
 </g>`;
 }
 
